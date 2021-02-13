@@ -31,7 +31,7 @@ iconName = focused ? 'ios-list-box': 'ios-list';
   tabBarOptions={{
     activeTintColor: 'white',
     inactiveTintColor: 'green',
-    
+   /* showLabel: false,*/
     style: { width: '90%',margin: 20, height:80,backgroundColor: 'lightgreen',borderWidth:1,borderColor: 'lightgreen', borderRadius:'10px', paddingTop:10}
   }}
   >
