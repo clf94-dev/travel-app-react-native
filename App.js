@@ -31,9 +31,10 @@ iconName = focused ? 'ios-list-box': 'ios-list';
   tabBarOptions={{
     activeTintColor: 'white',
     inactiveTintColor: 'green',
-    activeBackgroundColor: 'lightgreen',
-    inactiveBackgroundColor: 'lightgreen'
-  }}>
+    
+    style: { width: '90%',margin: 20, height:80,backgroundColor: 'lightgreen',borderWidth:1,borderColor: 'lightgreen', borderRadius:'10px', paddingTop:10}
+  }}
+  >
         <Tab.Screen name='Home' component={HomeScreen} />
         <Tab.Screen name='Search' component={SearchScreen}/>
         <Tab.Screen name='Settings' component={SettingsScreen}/>
