@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {View, Text, FlatList, TouchableOpacity} from 'react-native';
+import {View, Text, FlatList, TouchableOpacity, StyleSheet} from 'react-native';
 import {CountriesDestination} from './CountriesDestination'
 
 export default function HomeScreen(){
@@ -8,25 +8,47 @@ export default function HomeScreen(){
    
     const showCountries =({item}) =>{
         return(
-            <TouchableOpacity onPress={setCountry(item.index)}><Text>{item.country}</Text></TouchableOpacity>
+            <TouchableOpacity  style={styles.CountryButton} onPress={setCountry(item.index)}><Text style={styles.button}>{item.country}</Text></TouchableOpacity>
         )
     }
-    const showPlaces =({item}) =>{
-        return(
-           <View>
-               <Text>{item.destinations.name}</Text>
-               <Text>{item.destinations.info}</Text>
-           </View>
-        )
-    }
+
     return(
         
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', paddingTop: 70 }}>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', paddingTop: 70 , paddingLeft:20, backgroundColor: 'lightgray'}}>
             <Text>Home screen</Text>
-            <FlatList  style={{ position:'relative', top: 50 }} horizontal data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
-            <FlatList  style={{ position:'relative', top: 50 }} horizontal data={CountriesDestination[country]} keyExtractor={item => item.index} renderItem={showPlaces}/>       
+            <FlatList  style={{ position:'relative', top: 50 }} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
+            <FlatList  horizontal data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
+                 <View style={styles.cardPlaces}>
+  
+                             <Text>{item.name}</Text>
+                            <Text>{item.info}</Text>
+                        
+                     
+                </View>
+            )}/>       
          
          </View>
         
     )
 }
+
+const styles = StyleSheet.create({
+CountryButton: {
+    padding: 10,
+    
+},
+button: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'gray'
+},
+cardPlaces: {
+    alignSelf: 'flex-start',
+    margin: 15,
+    padding: 20,
+    width:300,
+    backgroundColor: 'white',
+    borderRadius:10
+}
+})
+
