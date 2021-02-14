@@ -17,7 +17,7 @@ export default function HomeScreen(){
         
         return(
             
-            <TouchableOpacity key={item.index} style={styles.CountryButton} onPress={() => countrySel(item.index)}><Text style={styles.button}>{item.country}</Text></TouchableOpacity>
+            <TouchableOpacity key={item.index} style={styles.CountryButton} onPress={() => countrySel(item.index)}><Text style={[styles.button, country == item.index && styles.select]}>{item.country}</Text></TouchableOpacity>
         
             )
     }
@@ -49,6 +49,11 @@ const styles = StyleSheet.create({
 CountryButton: {
     padding: 10,
     
+},
+select: {
+    color: 'green',
+    textDecorationLine: 'underline',
+    textDecorationStyle:'solid'
 },
 button: {
     fontSize: 20,
