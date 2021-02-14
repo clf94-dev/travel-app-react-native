@@ -5,11 +5,21 @@ import {CountriesDestination} from './CountriesDestination'
 
 export default function HomeScreen(){
     const [country, setCountry] = useState(0);
-   
+    const countrySel = (countryInd) =>{
+        return( 
+            console.log(countryInd),
+            setCountry(countryInd)
+
+            )
+      
+   }
     const showCountries =({item}) =>{
+        
         return(
-            <TouchableOpacity  style={styles.CountryButton} onPress={setCountry(item.index)}><Text style={styles.button}>{item.country}</Text></TouchableOpacity>
-        )
+            
+            <TouchableOpacity key={item.index} style={styles.CountryButton} onPress={() => countrySel(item.index)}><Text style={styles.button}>{item.country}</Text></TouchableOpacity>
+        
+            )
     }
 
     return(
