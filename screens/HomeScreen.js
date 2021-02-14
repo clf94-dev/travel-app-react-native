@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {View, Text, FlatList, TouchableOpacity, StyleSheet} from 'react-native';
+import {View, Text,Image, FlatList, TouchableOpacity, StyleSheet} from 'react-native';
 import {CountriesDestination} from './CountriesDestination'
 
 export default function HomeScreen(){
@@ -29,7 +29,7 @@ export default function HomeScreen(){
             <FlatList  style={{ position:'relative', top: 50, maxHeight:120}} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
             <FlatList  horizontal data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
                  <View style={styles.cardPlaces}>
-  
+                            <Image source={item.src} />
                              <Text>{item.name}</Text>
                             <Text>{item.info}</Text>
                         
