@@ -45,7 +45,7 @@ export default function HomeScreen(){
                             <Image style={{width:150, height:150, borderRadius:10}} source={item.src} />
                             <View style={styles.text2}>
                                 <Text style={styles.TopDestName}>{item.name}</Text>
-                                <Text>{item.location}</Text>
+                                <Text style={styles.TopDestLoc}>{item.location}</Text>
                             </View>
                 </View>
             )}/>   
@@ -109,10 +109,13 @@ cardTopDest: {
 },
 TopDestName:{
     fontSize:18,
+    marginTop: 10,
     fontWeight:'bold'
 }, text2:{
     padding:10,
     maxWidth:'50%'
+},TopDestLoc:{
+    paddingTop:10
 }
 })
 
