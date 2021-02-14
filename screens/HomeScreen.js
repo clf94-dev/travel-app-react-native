@@ -26,7 +26,7 @@ export default function HomeScreen(){
         
         <View style={{ flex: 1, alignItems: 'start', justifyContent: 'start', paddingTop: 70 , paddingLeft:20, backgroundColor: 'lightgray'}}>
             
-            <FlatList  style={{ position:'relative', top: 50, maxHeight:120}} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
+            <FlatList  style={{ position:'relative', top: 30, maxHeight:120}} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
             <FlatList  horizontal style={{maxHeight:370}}data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
                  <View style={styles.cardPlaces}>
                             <Image style={{width:'100%', borderRadius:10}} source={item.src} />
@@ -40,7 +40,15 @@ export default function HomeScreen(){
                 <Text style={styles.Top}>Top Destinations</Text>
                 <TouchableOpacity ><Text style={[styles.select, styles.viewall]}>View All</Text></TouchableOpacity>
             </View>   
-         
+            <FlatList  horizontal style={{maxHeight:370}}data={CountriesDestination[country].TopDestinations} keyExtractor={item => item.name} renderItem={({item}) => (
+                 <View style={styles.cardTopDest}>
+                            <Image style={{width:150, height:150, borderRadius:10}} source={item.src} />
+                            <View style={styles.text2}>
+                                <Text style={styles.TopDestName}>{item.name}</Text>
+                                <Text>{item.location}</Text>
+                            </View>
+                </View>
+            )}/>   
          </View>
         
     )
@@ -88,6 +96,23 @@ viewall:{
     paddingLeft: 100,
     paddingTop:4,
     fontSize:17
+},
+cardTopDest: {
+    flex: 1,
+    flexDirection:'row',
+    width:300,
+    padding:5,
+    backgroundColor:'white',
+    maxHeight:160,
+    borderRadius:10,
+    margin:15
+},
+TopDestName:{
+    fontSize:18,
+    fontWeight:'bold'
+}, text2:{
+    padding:10,
+    maxWidth:'50%'
 }
 })
 

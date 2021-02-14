@@ -27,31 +27,31 @@ export const CountriesDestination = [
             src: require('../assets/IslasGili.jpg')
         }],
         TopDestinations: [{
-            index: '',
+            index: 11,
             name: 'Ubud', 
             location:'', 
             src: require('../assets/Ubud.jpg')
         },
     {
-            index: '',
+            index: 12,
             name: ' Borobudur', 
             location:'', 
             src: require('../assets/Borobudur-Indonesia.jpg')
         },
     {
-            index: '',
+            index: 13,
             name: 'Komodo National Park', 
             location:'', 
             src: require('../assets/Komodo_National_Park_Indonesia.jpg')
         },
     {
-            index: '',
+            index: 14,
             name: 'Gili Islands', 
             location:'', 
             src: require('../assets/Gili_Islands_Indonesia.jpg')
         },
     {
-            index: '',
+            index: 15,
             name: 'Mount Bromo', 
             location:'', 
             src: require('../assets/Mount_Bromo_Indonesia.jpg')
@@ -88,19 +88,19 @@ export const CountriesDestination = [
             index: 11,
             name: 'Ko Phi Phi', 
             location:'', 
-            src: require('../assets/Ko_Phi_Phi_Thailand')
+            src: require('../assets/Ko_Phi_Phi_Thailand.jpg')
         },
     {
             index: 12,
             name: 'Phang Nga Bay', 
             location:'', 
-            src: require('../assets/Phang_Nga_Bay_Thailand')
+            src: require('../assets/Phang_Nga_Bay_Thailand.jpg')
         },
     {
             index: 13,
             name: 'Grand Palace', 
             location:'Bangkok', 
-            src: require('../assets/Grand_Palace__Bangkok_Thailand')
+            src: require('../assets/Grand_Palace__Bangkok_Thailand.jpg')
         },
     {
             index: 14,
