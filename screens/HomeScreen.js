@@ -24,9 +24,9 @@ export default function HomeScreen(){
 
     return(
         
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', paddingTop: 70 , paddingLeft:20, backgroundColor: 'lightgray'}}>
-            <Text>Home screen</Text>
-            <FlatList  style={{ position:'relative', top: 50 }} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
+        <View style={{ flex: 1, alignItems: 'start', justifyContent: 'center', paddingTop: 70 , paddingLeft:20, backgroundColor: 'lightgray'}}>
+            
+            <FlatList  style={{ position:'relative', top: 50, maxHeight:120}} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
             <FlatList  horizontal data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
                  <View style={styles.cardPlaces}>
   
