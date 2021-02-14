@@ -29,9 +29,12 @@ export default function HomeScreen(){
             <FlatList  style={{ position:'relative', top: 50, maxHeight:120}} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
             <FlatList  horizontal data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
                  <View style={styles.cardPlaces}>
-                            <Image source={item.src} />
+                            <Image style={{width:'100%', borderRadius:10}} source={item.src} />
+
+                            <View style={styles.text}>
                              <Text>{item.name}</Text>
                             <Text>{item.info}</Text>
+                            </View>
                         
                      
                 </View>
@@ -55,10 +58,13 @@ button: {
 cardPlaces: {
     alignSelf: 'flex-start',
     margin: 15,
-    padding: 20,
+ 
     width:300,
     backgroundColor: 'white',
     borderRadius:10
+},
+text: {
+    padding: 20,
 }
 })
 
