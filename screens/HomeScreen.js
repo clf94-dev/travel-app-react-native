@@ -65,6 +65,7 @@ cardPlaces: {
 },
 text: {
     padding: 20,
+    height: 120
 }
 })
 

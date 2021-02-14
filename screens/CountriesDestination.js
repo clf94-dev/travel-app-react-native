@@ -29,7 +29,7 @@ export const CountriesDestination = [
     },
     {
         index: 1,
-        country: 'Thailand',
+        country: 'Tailandia',
         destinations: [{
             name: 'Bangkok',
             location: '', 
@@ -85,7 +85,7 @@ export const CountriesDestination = [
     },
     {
         index: 3,
-        country: 'Canada',
+        country: 'Canadá',
         destinations: [{
             name: 'Toronto',
             location: '', 
@@ -141,7 +141,7 @@ export const CountriesDestination = [
     },
     {
         index: 5,
-        country: 'Japan',
+        country: 'Japón',
         destinations: [{
             name: 'Tokio',
             location: '', 
@@ -170,7 +170,7 @@ export const CountriesDestination = [
     
     {
         index: 6,
-        country: 'South Korea',
+        country: 'Corea del Sur',
         destinations: [{
             name: 'Seúl',
             location: '', 
