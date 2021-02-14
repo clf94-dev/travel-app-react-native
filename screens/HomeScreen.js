@@ -24,21 +24,22 @@ export default function HomeScreen(){
 
     return(
         
-        <View style={{ flex: 1, alignItems: 'start', justifyContent: 'center', paddingTop: 70 , paddingLeft:20, backgroundColor: 'lightgray'}}>
+        <View style={{ flex: 1, alignItems: 'start', justifyContent: 'start', paddingTop: 70 , paddingLeft:20, backgroundColor: 'lightgray'}}>
             
             <FlatList  style={{ position:'relative', top: 50, maxHeight:120}} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
-            <FlatList  horizontal data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
+            <FlatList  horizontal style={{maxHeight:370}}data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
                  <View style={styles.cardPlaces}>
                             <Image style={{width:'100%', borderRadius:10}} source={item.src} />
-
                             <View style={styles.text}>
-                             <Text>{item.name}</Text>
-                            <Text>{item.info}</Text>
+                                <Text>{item.name}</Text>
+                                <Text>{item.info}</Text>
                             </View>
-                        
-                     
                 </View>
-            )}/>       
+            )}/>    
+            <View style={styles.header}>
+                <Text style={styles.Top}>Top Destinations</Text>
+                <TouchableOpacity ><Text style={[styles.select, styles.viewall]}>View All</Text></TouchableOpacity>
+            </View>   
          
          </View>
         
@@ -71,6 +72,22 @@ cardPlaces: {
 text: {
     padding: 20,
     height: 120
+},
+Top: {
+    fontSize:25,
+    fontWeight:'bold',
+
+
+},
+header:{
+    flex: 1,
+    flexDirection:'row',
+    maxHeight:100
+},
+viewall:{
+    paddingLeft: 100,
+    paddingTop:4,
+    fontSize:17
 }
 })
 
