@@ -27,11 +27,11 @@ export default function HomeScreen(){
         <View style={{ flex: 1, alignItems: 'start', justifyContent: 'start', paddingTop: 70 , paddingLeft:20, backgroundColor: 'lightgray'}}>
             
             <FlatList  style={{ position:'relative', top: 30, maxHeight:120}} horizontal showsHorizontalScrollIndicator='false' data={CountriesDestination} keyExtractor={item => item.index} renderItem={showCountries}/>       
-            <FlatList  horizontal style={{maxHeight:370}}data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
+            <FlatList horizontal showsHorizontalScrollIndicator='false' horizontal style={{maxHeight:370}}data={CountriesDestination[country].destinations} keyExtractor={item => item.index} renderItem={({item}) => (
                  <View style={styles.cardPlaces}>
                             <Image style={{width:'100%', borderRadius:10}} source={item.src} />
                             <View style={styles.text}>
-                                <Text>{item.name}</Text>
+                                <Text style={styles.nameDest}>{item.name}</Text>
                                 <Text>{item.info}</Text>
                             </View>
                 </View>
@@ -40,7 +40,7 @@ export default function HomeScreen(){
                 <Text style={styles.Top}>Top Destinations</Text>
                 <TouchableOpacity ><Text style={[styles.select, styles.viewall]}>View All</Text></TouchableOpacity>
             </View>   
-            <FlatList  horizontal style={{maxHeight:370}}data={CountriesDestination[country].TopDestinations} keyExtractor={item => item.name} renderItem={({item}) => (
+            <FlatList horizontal showsHorizontalScrollIndicator='false' horizontal  style={{maxHeight:370}}data={CountriesDestination[country].TopDestinations} keyExtractor={item => item.name} renderItem={({item}) => (
                  <View style={styles.cardTopDest}>
                             <Image style={{width:150, height:150, borderRadius:10}} source={item.src} />
                             <View style={styles.text2}>
@@ -79,13 +79,11 @@ cardPlaces: {
 },
 text: {
     padding: 20,
-    height: 120
+    height: 130
 },
 Top: {
     fontSize:25,
     fontWeight:'bold',
-
-
 },
 header:{
     flex: 1,
@@ -116,6 +114,11 @@ TopDestName:{
     maxWidth:'50%'
 },TopDestLoc:{
     paddingTop:10
+},
+nameDest:{
+    fontSize:18,
+    fontWeight:'bold',
+    marginBottom:5
 }
 })
 

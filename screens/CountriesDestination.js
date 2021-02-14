@@ -197,7 +197,7 @@ export const CountriesDestination = [
     {
             name: 'Quebec',
             location: '', 
-            info: 'Ciudad de Canadá con Chateau Frontenac, Hotel de Glace (hotel de hielo estacional) y un carnavalde invierno.',
+            info: 'Ciudad de Canadá con Chateau Frontenac, Hotel de Glace (hotel de hielo estacional) y un carnaval de invierno.',
             src: require('../assets/Quebec.jpg')
         }],
         TopDestinations: [{
