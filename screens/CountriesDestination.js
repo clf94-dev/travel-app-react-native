@@ -25,6 +25,36 @@ export const CountriesDestination = [
             location: '', 
             info: 'Islas indonesias con arrecifes de coral, tortugas marinas en Turtle Point y un barco hundido en la playa Mentigi',
             src: require('../assets/IslasGili.jpg')
+        }],
+        TopDestinations: [{
+            index: '',
+            name: 'Ubud', 
+            location:'', 
+            src: require('../assets/Ubud.jpg')
+        },
+    {
+            index: '',
+            name: ' Borobudur', 
+            location:'', 
+            src: require('../assets/Borobudur-Indonesia.jpg')
+        },
+    {
+            index: '',
+            name: 'Komodo National Park', 
+            location:'', 
+            src: require('../assets/Komodo_National_Park_Indonesia.jpg')
+        },
+    {
+            index: '',
+            name: 'Gili Islands', 
+            location:'', 
+            src: require('../assets/Gili_Islands_Indonesia.jpg')
+        },
+    {
+            index: '',
+            name: 'Mount Bromo', 
+            location:'', 
+            src: require('../assets/Mount_Bromo_Indonesia.jpg')
         }]
     },
     {
@@ -53,7 +83,37 @@ export const CountriesDestination = [
             location: '', 
             info: 'Antigua capital con templos budistas y ruinas de palacios, un mercado flotante y un santuario de elefantes.',
             src: require('../assets/Ayutthaya.jpg')
-        },]
+        }],
+        TopDestinations: [{
+            index: 11,
+            name: 'Ko Phi Phi', 
+            location:'', 
+            src: require('../assets/Ko_Phi_Phi_Thailand')
+        },
+    {
+            index: 12,
+            name: 'Phang Nga Bay', 
+            location:'', 
+            src: require('../assets/Phang_Nga_Bay_Thailand')
+        },
+    {
+            index: 13,
+            name: 'Grand Palace', 
+            location:'Bangkok', 
+            src: require('../assets/Grand_Palace__Bangkok_Thailand')
+        },
+    {
+            index: 14,
+            name: 'Rai Leh', 
+            location:'', 
+            src: require('../assets/Rai_Leh_Thailand.jpg')
+        },
+    {
+            index: 15,
+            name: 'Mu Ko Chang National Park', 
+            location:'', 
+            src: require('../assets/Mu_Ko_Chang_National_Park_Thailand.jpg')
+        }]
     },
     {
         index: 2,
@@ -81,7 +141,37 @@ export const CountriesDestination = [
             location: '', 
             info: 'Capital de Sichuan con una gastronomía picante,artefactos del Museo Jinsha y el centro de pandas gigantes.',
             src: require('../assets/Chengdu.jpg')
-        },]
+        }],
+        TopDestinations: [{
+            index: 21,
+            name: 'The Great Wall of China', 
+            location:'Beijing', 
+            src: require('../assets/Great_Wall_of_China.jpg')
+        },
+    {
+            index: 22,
+            name: 'The Terracotta Army', 
+            location:'Xi’an', 
+            src: require('../assets/The_Terracotta_Army_China.jpg')
+        },
+    {
+            index: 23,
+            name: 'The Forbidden City', 
+            location:'Beijing', 
+            src: require('../assets/The_Forbidden_City_China.jpg')
+        },
+    {
+            index: 24,
+            name: 'The Li River', 
+            location:'Guilin', 
+            src: require('../assets/The_Li_River_China.jpg')
+        },
+    {
+            index: 25,
+            name: 'The Yellow Mountains', 
+            location:'Huangshan', 
+            src: require('../assets/Huangshan-China.jpg')
+        }]
     },
     {
         index: 3,
@@ -109,6 +199,36 @@ export const CountriesDestination = [
             location: '', 
             info: 'Ciudad de Canadá con Chateau Frontenac, Hotel de Glace (hotel de hielo estacional) y un carnavalde invierno.',
             src: require('../assets/Quebec.jpg')
+        }],
+        TopDestinations: [{
+            index: 31,
+            name: 'Niagara Falls', 
+            location:'Ontario', 
+            src: require('../assets/Niagara_Falls_Canada.jpg')
+        },
+    {
+            index: 32,
+            name: 'Banff National Park and the Rocky Mountains', 
+            location:'', 
+            src: require('../assets/Banff_National_Park_and_the_Rocky_Mountains_Canada.jpg')
+        },
+    {
+            index: 33,
+            name: 'Old Quebec', 
+            location:'Quebec', 
+            src: require('../assets/Old_Quebec_Canada.jpg')
+        },
+    {
+            index: 34,
+            name: 'Ottawa’s Parliament Hill', 
+            location:'Ontario', 
+            src: require('../assets/Ottawa_s_Parliament_Hill_Canada.jpg')
+        },
+    {
+            index: 35,
+            name: 'Vancouver', 
+            location:'', 
+            src: require('../assets/Vancouver_Canada.jpg')
         }]
     },
     {
@@ -137,7 +257,37 @@ export const CountriesDestination = [
             location: '', 
             info: 'Retiro montañoso al oeste de Sídney, con valles empinados y la formación de arenisca Tres Hermanas.',
             src: require('../assets/MontanasAzules.jpg')
-        },]
+        },],
+        TopDestinations: [{
+            index: 41,
+            name: 'Sydney Opera House', 
+            location:'Sydney', 
+            src: require('../assets/sydney-opera-house.jpg')
+        },
+    {
+            index: 42,
+            name: 'Great Barrier Reef Marine Park', 
+            location:'', 
+            src: require('../assets/great-barrier-reef.jpg')
+        },
+    {
+            index: 43,
+            name: ' Uluru-Kata Tjuta National Park', 
+            location:'', 
+            src: require('../assets/uluru-kata-tjuta-national-park.jpg')
+        },
+    {
+            index: 44,
+            name: 'Sydney Harbour Bridge', 
+            location:'', 
+            src: require('../assets/sydney-harbour-bridge.jpg')
+        },
+    {
+            index: 45,
+            name: 'Bondi Beach', 
+            location:'Sydney', 
+            src: require('../assets/sydney-bondi-beach.jpg')
+        }]
     },
     {
         index: 5,
@@ -165,7 +315,37 @@ export const CountriesDestination = [
             location: '', 
             info: 'Capital de Japón en el s. VIII con templos de la época como el Tōdai-ji, famoso por su Buda de bronce de 15 m.' ,
             src: require('../assets/Nara.jpg')        
-        },]
+        },],
+        TopDestinations: [{
+            index: 51,
+            name: 'Golden Pavilion', 
+            location:'', 
+            src: require('../assets/Golden_Pavilion_Japan.jpg')
+        },
+    {
+            index: 52,
+            name: 'Mount Fuji', 
+            location:'', 
+            src: require('../assets/mount-fuji-Japan.jpg')
+        },
+    {
+            index: 53,
+            name: 'Tokyo Imperial Palace and Tokyo Tower', 
+            location:'', 
+            src: require('../assets/Tokyo_Tower_Japan.jpg')
+        },
+    {
+            index: 54,
+            name: 'Todaiji Temple', 
+            location:'Nara', 
+            src: require('../assets/Todaiji_Temple_in_Nara__Japan.jpg')
+        },
+    {
+            index: 55,
+            name: 'Jigokudani Monkey Park', 
+            location:'', 
+            src: require('../assets/Jigokudani_Monkey_Park__Japan.jpg')
+        }]
     },
     
     {
@@ -194,6 +374,36 @@ export const CountriesDestination = [
             location: '', 
             info: 'Ciudad surcoreana con la gruta de Seokguram y sitios históricos de la dinastía Silla, como el templo Bulguksa.',
             src: require('../assets/Gyeongju.jpg')
-        },]
+        }],
+        TopDestinations: [{
+            index: 61,
+            name: 'Gyeongbokgung Palace', 
+            location:'Seoul', 
+            src: require('../assets/Gyeongbokgung-Palace-South-Korea.jpg')
+        },
+    {
+            index: 62,
+            name: ' N Seoul Tower', 
+            location:'Seoul', 
+            src: require('../assets/N_Seoul_Tower__South_Korea.jpg')
+        },
+    {
+            index: 63,
+            name: 'Namiseom Island', 
+            location:'', 
+            src: require('../assets/Namiseom_Island__South_Korea.jpg')
+        },
+    {
+            index: 64,
+            name: 'Lotte World', 
+            location:'', 
+            src: require('../assets/Lotte_World__South_Korea.jpg')
+        },
+    {
+            index: 65,
+            name: 'The Garden of Morning Calm', 
+            location:'', 
+            src: require('../assets/The_Garden_of_Morning_Calm__South_Korea.jpg')
+        }]
     },
 ]
